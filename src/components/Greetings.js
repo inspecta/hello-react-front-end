@@ -16,7 +16,7 @@ const Greetings = () => {
       <h1>Greetings</h1>
       <p>
         {fetchedGreeting.greetings
-          ? <p>{ }fetchedGreeting.greetings.greetings</p>
+          ? <p>{fetchedGreeting.greetings.greetings}</p>
           : <p>No greetings available</p>
         }
       </p>

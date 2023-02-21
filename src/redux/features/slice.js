@@ -30,11 +30,11 @@ const greetingsSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchGreeting.pending, (state) => {
-        console.log('Im here');
         state.status = 'loading';
       })
       .addCase(fetchGreeting.fulfilled, (state, action) => {
         state.status = 'succeeded';
+        console.log('Im here');
         state.greetings = action.payload;
       })
       .addCase(fetchGreeting.rejected, (state, action) => {

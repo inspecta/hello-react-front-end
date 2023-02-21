@@ -1,6 +1,6 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import axios from "axios";
-import types from '../types/'
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import axios from 'axios';
+import types from '../types';
 
 const url = 'http://localhost:3000/api/v1/messages';
 
@@ -34,7 +34,6 @@ const greetingsSlice = createSlice({
       })
       .addCase(fetchGreeting.fulfilled, (state, action) => {
         state.status = 'succeeded';
-        console.log('Im here');
         state.greetings = action.payload;
       })
       .addCase(fetchGreeting.rejected, (state, action) => {
@@ -46,4 +45,3 @@ const greetingsSlice = createSlice({
 
 export const { greeting } = greetingsSlice.actions;
 export default greetingsSlice.reducer;
-

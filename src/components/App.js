@@ -1,4 +1,4 @@
-import Greetings from "./Greetings";
+import Greetings from './Greetings';
 
 function App() {
   return (

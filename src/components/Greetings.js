@@ -14,12 +14,12 @@ const Greetings = () => {
   return (
     <div>
       <h1>Greetings</h1>
-      <p>
+      <div>
         {fetchedGreeting.greetings
           ? <p>{fetchedGreeting.greetings.greetings}</p>
           : <p>No greetings available</p>
         }
-      </p>
+      </div>
     </div>
   )
 }
